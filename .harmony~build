@@ -1,0 +1,108 @@
+﻿# Specifies path to an executable program
+#  used for compilation of source files.
+#
+# +-------------------+
+# | compiler=clang    |
+# +-------------------+
+# | compiler=gcc      |
+# +-------------------+
+# | compiler=clang-cl |
+# +-------------------+
+#
+# It can be a signle path to that executable
+#  or just a name of it if defined in the PATH.
+compiler=clang-cl
+
+# Specifies paths to files containing
+#  compilation options or a set of themself.
+#
+# +---------------------------------------+
+# | options=compile_flags.txt             |
+# | options=ext\library\compile_flags.txt |
+# +---------------------------------------+
+# | options=/options:strict               |
+# | options=/std:c17 /TC                  |
+# | options=/MT /Oi /EHa- /sdl- /GS- /GR- |
+# | options=/Wall /Wx                     |
+# | options=/D_UNICODE /DUNICODE          |
+# | options=-I./inc                       |
+# +---------------------------------------+
+#
+# It can be multiple paths to text files
+#  containing compilation options or just direct sets of them.
+options=compile_flags.txt
+
+# Specifies path with file name to
+#  an output file produced by the compiler.
+#
+# +---------------------+
+# | output=out\main.exe |
+# +---------------------+
+#
+# It can only be a single path
+#  with file name at the end of it.
+output=out\main.exe
+
+# Specifies path to an include directory
+#  used by the link process and corresponding flag.
+#
+# +-----------------------------+
+# | include=inc\herbary\harmony |
+# +-----------------------------+
+#
+# It can only be a single path where
+#  symlinks to header files will be stored.
+include=
+
+# Specifies paths to source files used
+#  by the compiler to produce a final program.
+#
+# +----------------------+
+# | sources=src          |
+# | sources=ext\gl3w\src |
+# +----------------------+
+#
+# It can be multiple paths to directories
+#  containing *.c source files or just direct paths to them.
+sources=src
+
+# Specifies paths to header files used
+#  by the link process to create symlinks.
+#
+# +----------------------+
+# | headers=src          |
+# | headers=ext\glfw\inc |
+# | headers=ext\gl3w\inc |
+# +----------------------+
+#
+# It can be multiple paths to directories
+#  containing *.h header files or just direct paths to them.
+headers=
+
+# Specifies paths to library files used
+#  by the final program as a required dependency.
+#
+# +-------------------------+
+# | libraries=lib\glfw3.lib |
+# | libraries=kernel32.lib  |
+# +-------------------------+
+# | libraries=lib           |
+# +-------------------------+
+#
+# It can be multiple paths to directories
+#  containing *.lib library files or just direct paths to them.
+libraries=
+
+# Specifies paths to binary files used
+#  by the final program as a required dependency.
+#
+# +------------------------+
+# | binaries=bin\glfw3.dll |
+# | binaries=bin\gl3w.dll  |
+# +------------------------+
+# | binaries=bin           |
+# +------------------------+
+#
+# It can be multiple paths to directories
+#  containing *.dll binary files or just direct paths to them.
+binaries=
